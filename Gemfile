@@ -11,7 +11,7 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 
 # Use bcrypt for password hashes
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '3.1.2'
 
 # Use paginate for paginating posts and classes
 gem 'will_paginate', '3.0.4'

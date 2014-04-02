@@ -1,8 +1,9 @@
 /* Globals */
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+	font-weight: 300;
 }
 
 /* Links */
@@ -40,7 +41,7 @@ a:after
 }
 
 .navbar-default {
-	background-color: #3498db;
+	background-color: #135571;
 	border: none;
 	border-radius: 0px;
 	padding: 10px 0 10px 0;
@@ -51,9 +52,17 @@ a:after
 	font-size: 1.2em;
 }
 
+.navbar-default .navbar-brand:hover {
+	color: #26abe2;
+}
+
 .navbar-default .navbar-nav > li > a {
 	color: #fff;
 	font-size: 1em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #26abe2;
 }
 
 .navbar-default .navbar-toggle {
@@ -62,6 +71,57 @@ a:after
 
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	background-color: #26abe2;
+	color: white;
+	border-bottom: 1px solid #135571;
+}
+
+/* Buttons */
+
+.btn-primary {
+	background-color: #006dcc;
+}
+
+.btn-trans {
+	background-color: transparent;
+	border-radius: 5px;
+	border: none;
+	border: 1.5px solid #fff;
+	font-size: 22px;
+	padding: 10px 15px 10px 15px;
+	margin: 20px 10px 0 0;
+	display: inline-block;
+	color: #fff;
+	font-weight: 300;
+}
+
+.btn-trans:hover {
+	color: #fff;
+	background-color: #135571;
+}
+
+/* Forms */
+
+form {
+  padding-bottom: 20px;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }
 
 /* Footer */
