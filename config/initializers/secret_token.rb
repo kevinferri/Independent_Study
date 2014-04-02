@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-IndependentStudy::Application.config.secret_key_base = 'aa52b40f374c09657191804dc15c0889b6429eb73c1c573446f865897d8a6aa0d3e44536304fa0e5dfa166b0cfa0268b7edbbb2e3b596a4262dd212c5a18e5e7'
+DefaultApp::Application.config.secret_key_base = '7d9bb399c2fdf6ed0d1f4fa3a61fb8bfa5f7b25e9f38b61a5bd25c45d67314c2efe977be65b7b30294483c973f69427e7f1e036369362a036996c1fec9acb74a'

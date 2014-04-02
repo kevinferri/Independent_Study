@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-IndependentStudy::Application.load_tasks
+DefaultApp::Application.load_tasks

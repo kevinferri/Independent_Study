@@ -1,0 +1,67 @@
+/* Globals */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+/* Links */
+
+a {
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after
+{
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Navbar */
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: #3498db;
+	border: none;
+	border-radius: 0px;
+	padding: 10px 0 10px 0;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-size: 1em;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+/* Footer */
