@@ -15,6 +15,7 @@ gem 'bcrypt-ruby', '3.1.2'
 
 # Use paginate for paginating posts and classes
 gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
