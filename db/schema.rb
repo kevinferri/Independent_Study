@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140415015211) do
+ActiveRecord::Schema.define(version: 20140415210254) do
 
   create_table "assignments", force: true do |t|
+    t.string   "name"
+    t.string   "description"
     t.string   "class_name"
     t.string   "class_code"
-    t.string   "assignment_name"
-    t.string   "assignment_description"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
