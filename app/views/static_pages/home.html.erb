@@ -1,10 +1,17 @@
 <div class="jumbotron text-center">
    <h1>Welcome to Study Buddy</h1>
    <%= link_to "FIND CLASSES", "#", class: "btn-trans", role: "button" %>
-   <%= link_to "FIND ASSIGNMENTS", "#", class: "btn-trans", role: "button" %>
+   <%= link_to "FIND ASSIGNMENTS", assignments_path, class: "btn-trans", role: "button" %>
 </div>
 
 <div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>Want people to study with?</h1>
+      <p>Study Buddy is a great way to find assignments or classes you need help with. <%= link_to "Looking for a particular assignment?", assignments_path %> <%= link_to "Looking for a particular class?", "#"%> If you can't find the assignment or class you're looking for, <%= link_to "post it yourself!", new_assignment_path %></p>
+    </div>
+  </div>
+  <hr>
   <div class="row text-center">
     <div class="col-md-6">
       <h1>How it works</h1>

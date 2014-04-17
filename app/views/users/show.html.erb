@@ -1,15 +1,13 @@
-<!--<div class="jumbotron text-center">
-  <h2><%= @user.name %></h2>
-</div>-->
-
 <div class="jumbotron text-center">
   <h2><%= @user.name %></h2>
 </div>
 
+
+
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h3>Posted Asignments (<%= @user.assignments.count %>)</h3>
-      <p>A list of links to assignments will go here</p>
-  </div>
+  <h3>Posted Asignments (<%= @user.assignments.count %>)</h3>
+  
+  <% @paginate_assignments.each do |assignment| %>
+    <%= link_to assignment.title, assignment %>
+  <% end %>
 </div>
