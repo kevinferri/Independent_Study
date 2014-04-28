@@ -1,9 +1,16 @@
 <div class="jumbotron text-center">
   <h2>Assignments</h2>
+  <!--<a class="btn-trans" href="/assignments/new" role="button">POST AN ASSIGNMENT +</a>-->
 </div>
 
 <div class="container">
-  List of assignments will go here
   <% @assignments.each do |assignment| %>
+    <h3><%= link_to assignment.title, assignment %> <small><%= assignment.class_code %> - <%= assignment.class_name %></small></h3>
+    <%= assignment.description %>
+    <p class="postedby">Posted by <%= link_to assignment.user.name, assignment.user %> on <%= assignment.created_at.strftime("%b %d, %Y") %></p>
+    <hr>
   <% end %>
+
+  <p>Don't see the assignment you were looking for? <%= link_to "Post it yourself.", new_assignment_path %></p>
+
 </div>

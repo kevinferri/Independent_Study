@@ -1,13 +1,22 @@
 <div class="jumbotron text-center">
-  <h2><%= @user.name %></h2>
+  <h2>Assignments Posted By <%= @user.name %></h2>
 </div>
 
-
-
 <div class="container">
-  <h3>Posted Asignments (<%= @user.assignments.count %>)</h3>
   
+  <div class="text-center">
+    <a class="btn btn-lg btn-primary" href="mailto:<%= @user.email %>" role="button">Email: <%= @user.email %></a>
+  </div>
+
+  <hr>
+
+  <h3>Posted Asignments (<%= @user.assignments.count %>)</h3>
+   
   <% @paginate_assignments.each do |assignment| %>
-    <%= link_to assignment.title, assignment %>
+    <h3><%= link_to assignment.title, assignment %> <small><%= assignment.class_code %> - <%= assignment.class_name %></small></h3>
+    <% if @user == current_user %>
+      <%= link_to "Edit", [:edit, assignment] %> | <%= link_to "Delete", assignment, method: :delete, data: { confirm: "Are you sure? This can not be undone." } %>
+    <% end %>
+    <hr>
   <% end %>
 </div>

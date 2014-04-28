@@ -1,5 +1,5 @@
 <div class="jumbotron text-center">
-  <h2>Post An Assignment</h2>
+  <h2>Edit An Assignment</h2>
 </div>
 
 <div class="container">
@@ -8,7 +8,7 @@
     <div class="col-md-8">
       <%= form_for(@assignment) do |f| %>
 
-
+        
 
         <%= f.label :title %>
         <%= f.text_field :title, class: "form-control", placeholder: "e.g. The title of the assignment" %>
@@ -18,11 +18,11 @@
         <br>
         <%= f.label :class_name %>
         <%= f.text_field :class_name, class: "form-control", placeholder: "The name of the class e.g. Introduction to Computer Science" %>
-        <br> 
+        <br>
         <%= f.label :class_code %>
         <%= f.text_field :class_code, class: "form-control", placeholder: "e.g. C211, K201, I101, etc." %>
         <br>
-        <%= f.submit "Post Assignment", class: "btn btn-lg btn-primary" %>
+        <%= f.submit "Save Changes", class: "btn btn-lg btn-primary" %>
       <% end %>
     </div>
     <div class="col-md-2"></div>

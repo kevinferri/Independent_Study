@@ -23,7 +23,26 @@ class AssignmentsController < ApplicationController
     @assignment = Assignment.find(params[:id])
   end
 
+  def edit
+    @assignment = Assignment.find(params[:id])
+  end
+
+  def update
+    @assignment = Assignment.find(params["id"])
+    if @assignment.update_attributes(assignment_params)
+      flash[:success] = "Assignment updated"
+      redirect_to @assignment
+    else
+      render 'edit'
+    end
+  end
+
   def destroy
+    @assignment = Assignment.find(params[:id])
+    @user = User.find(params["id"])
+    @assignment.destroy
+    flash[:success] = "Assignment deleted."
+    redirect_to @user
   end
 
   private
