@@ -3,5 +3,9 @@
 </div>
 
 <div class="container">
+  <h2 class="text-center"><%= @assignment.class_code %> - <%= @assignment.class_name %></h2>
+  <p><%= @assignment.description %></p>
+  <hr>
+  <p>Contact <%= @assignment.user.name %> at <a href="mailto:<%= @assignment.user.email %>"><%= @assignment.user.email%></a> to work on this assignment</p>
 </div>
 
